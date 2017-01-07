@@ -11,3 +11,12 @@
 /log/*
 !/log/.keep
 /tmp
+!/tmp/.keep
+
+# Ignore Byebug command history file.
+.byebug_history
+
+/public
+
+# Ignore secret keys on .env
+/.env
