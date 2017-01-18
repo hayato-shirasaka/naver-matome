@@ -13,8 +13,8 @@ default: &default
   adapter: mysql2
   encoding: utf8
   pool: 5
-  username: root
-  password: ENV['PASSWORD']
+  username: <%= ENV['DB_USERNAME'] %>
+  password: <%= ENV['DB_PASSWORD'] %>
   socket: /tmp/mysql.sock
 
 development:
@@ -50,6 +50,6 @@ test:
 production:
   <<: *default
   database: naver-matome_production
-  username: root
-  password: ENV['PASSWORD']
+  username: <%= ENV['DB_USERNAME'] %>
+  password: <%= ENV['DB_PASSWORD'] %>
   socket: /var/lib/mysql/mysql.sock
