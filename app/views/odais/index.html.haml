@@ -1,54 +1,388 @@
 .matome-top
   .matome-header
-    .header-innner
-      .header-banner
-        %h1 NAVER まとめ
-  /     .header-navber
-  /       %ul.header-links
-  /         %ls.header-link
-  /           %a まとめ作成
-  /         %ls.header-link
-  /           %a 会員登録 (無料)
-  /         %ls.header-link
-  /           %a ログイン
-  /   .header-bottom
-  /     .header-footer
-  /       .fieldset
-  /         .search-input
-  /           .search-input-inner
-  /         %span.search-button
-  /           = f.input "submit", class: "send-button"
-  /       %time.datetime=2017-01-05
-  /         %em.today
-  /         %span.week
-  /       .sns-links
-  /         %ul.sns-links
-  /           %ls.sns-link
-  /             %a
-  /               %span Facebook
-  /           %ls.sns-link
-  /             %a
-  /               %span twitter
-  /           %ls.sns-link
-  /             %a
-  /               %span RSS
-  / .matome-main
-  / .matome-footer
-  /   .footer-inner
-  /     .footer-innner-inner
-  /       .footer-innner-links
-  /         %ul.footer-innner-links
-  /           %ls.footer-inner-link
-  /             %a 会社概要
-  /           %ls.footer-inner-link
-  /             %a 利用規約
-  /           %ls.footer-inner-link
-  /             %a プライバシー
-  /           %ls.footer-inner-link
-  /             %a ヘルプ
-  /           %ls.footer-inner-link
-  /             %a NAVERまとめ公式ブログ
-  /         %p.copyright
-  /           .small ©
-  /             %b LINE Corporation
-
+    .header-inner
+      .header-navber
+        %ul.header-links
+          %ls.header-link
+            %a.header-option まとめ作成 |
+          %ls.header-link
+            %a.header-option 会員登録 (無料)
+          %ls.header-link
+            %a.header-option ログイン
+      .header-title
+        %h1
+          %a NAVER まとめ
+  .matome-main
+    .main-header
+      .main-header-inner
+        %p.inner-data
+          .time
+            %em 2017.1.24
+            %span (Tue)
+        %ul.sns-links
+          %ls.sns-link
+            %a.sns-icon facebook
+          %ls.sns-link
+            %a.sns-icon twitter
+          %ls.sns-link
+            %a.sns-icon RSS
+        %fieldset
+          .search-input
+            .search-input-inner
+          %span.search-input-btn
+    .main-contents
+      .main-lists
+        .main-lists-wrap
+          .category-list
+            %ul.categories
+              %ls.total
+                %a.overall 総合
+              %ls.category
+                %a.others ガールズ
+              %ls.category
+                %a.others ニュース･ゴシップ
+              %ls.category
+                %a.others エンタメ･カルチャー
+              %ls.category
+                %a.others おでかけ･グルメ
+              %ls.category
+                %a.others 暮らし･アイデア
+              %ls.category
+                %a.others レシピ
+              %ls.category
+                %a.others カラダ
+              %ls.category
+                %a.others ビジネススキル
+              %ls.category
+                %a.others IT･ガジェット
+              %ls.category
+                %a.others デザイン･アート
+              %ls.category
+                %a.others 雑学
+              %ls.category
+                %a.others おもしろ
+              %ls.category
+                %a.others 定番
+          .article-matome01
+            .article-matome01-wrap
+              .artical-heading
+                %h2 注目まとめ
+              %ul.artical-matome01-list
+                %ls.artical-matome01-item
+                  .artical-matome01-item-thumb
+                    %a.thumb-image
+                      %img.thumb
+                  .artical-matome01-item-text
+                    %h3
+                      %a.artical-matome01-item-title-link 宇多田ヒカル最新MVも手掛ける映像作家の作品がカッコイイ！
+                    .artical-matome01-item-detail
+                      %p.artical-matome01-item-username
+                        %a.artical-matome01-item-username-link ラガモさん
+                      %p.artical-matome01-item-pvcount
+                        %span.artical-matome01-item-pvcount-num 15555
+                        %span.artical-matome01-item-pvcount-unit view
+                %ls.artical-matome01-item-down
+                  .artical-matome01-item-thumb
+                    %a.thumb-image
+                      %img.thumb
+                  .artical-matome01-item-text
+                    %h3
+                      %a.artical-matome01-item-title-link これでスッキリ。部屋に欲しい「スマホ充電ステーション」たち
+                    .artical-matome01-item-detail
+                      %p.artical-matome01-item-username
+                        %a.artical-matome01-item-username-link hakyunaさん
+                      %p.artical-matome01-item-pvcount
+                        %span.artical-matome01-item-pvcount-num 72239
+                        %span.artical-matome01-item-pvcount-unit view
+                %ls.artical-matome01-item-down
+                  .artical-matome01-item-thumb
+                    %a.thumb-image
+                      %img.thumb
+                  .artical-matome01-item-text
+                    %h3
+                      %a.artical-matome01-item-title-link 最も洗練された野生、ブラジルの奇跡、魚たちの奇跡
+                    .artical-matome01-item-detail
+                      %p.artical-matome01-item-username
+                        %a.artical-matome01-item-username-link lessthanpandaさん
+                      %p.artical-matome01-item-pvcount
+                        %span.artical-matome01-item-pvcount-num 7546
+                        %span.artical-matome01-item-pvcount-unit view
+                %ls.artical-matome01-item-down
+                  .artical-matome01-item-thumb
+                    %a.thumb-image
+                      %img.thumb
+                  .artical-matome01-item-text
+                    %h3
+                      %a.artical-matome01-item-title-link 芥川・直木賞が発表Twitterで見かけた読者からの感想が参考…
+                    .artical-matome01-item-detail
+                      %p.artical-matome01-item-username
+                        %a.artical-matome01-item-username-link キメラのつばささん
+                      %p.artical-matome01-item-pvcount
+                        %span.artical-matome01-item-pvcount-num 34521
+                        %span.artical-matome01-item-pvcount-unit view
+                %ls.artical-matome01-item-down
+                  .artical-matome01-item-thumb
+                    %a.thumb-image
+                      %img.thumb
+                  .artical-matome01-item-text
+                    %h3
+                      %a.artical-matome01-item-title-link 簡単で美味しい！濃厚で絶品「チーズパスタ」のレシピ
+                    .artical-matome01-item-detail
+                      %p.artical-matome01-item-username
+                        %a.artical-matome01-item-username-link mikkomekkoさん
+                      %p.artical-matome01-item-pvcount
+                        %span.artical-matome01-item-pvcount-num 2701
+                        %span.artical-matome01-item-pvcount-unit view
+                %ls.artical-matome01-item-down
+                  .artical-matome01-item-thumb
+                    %a.thumb-image
+                      %img.thumb
+                  .artical-matome01-item-text
+                    %h3
+                      %a.artical-matome01-item-title-link 外国人を無事救出! スキー・スノーボードにおける遭難対策
+                    .artical-matome01-item-detail
+                      %p.artical-matome01-item-username
+                        %a.artical-matome01-item-username-link ニュースの鏡さん
+                      %p.artical-matome01-item-pvcount
+                        %span.artical-matome01-item-pvcount-num 4955
+                        %span.artical-matome01-item-pvcount-unit view
+                %ls.artical-matome01-item-down
+                  .artical-matome01-item-thumb
+                    %a.thumb-image
+                      %img.thumb
+                  .artical-matome01-item-text
+                    %h3
+                      %a.artical-matome01-item-title-link バレンタインに使える♡大人向けビターな「ほろ苦チョコ」レシピ
+                    .artical-matome01-item-detail
+                      %p.artical-matome01-item-username
+                        %a.artical-matome01-item-username-link rarako7さん
+                      %p.artical-matome01-item-pvcount
+                        %span.artical-matome01-item-pvcount-num 2729
+                        %span.artical-matome01-item-pvcount-unit view
+                %ls.artical-matome01-item-down
+                  .artical-matome01-item-thumb
+                    %a.thumb-image
+                      %img.thumb
+                  .artical-matome01-item-text
+                    %h3
+                      %a.artical-matome01-item-title-link 虚偽や疑わしい事案も…天下り斡旋問題にいろんな意見が出てる
+                    .artical-matome01-item-detail
+                      %p.artical-matome01-item-username
+                        %a.artical-matome01-item-username-link CloverSさん
+                      %p.artical-matome01-item-pvcount
+                        %span.artical-matome01-item-pvcount-num 6812
+                        %span.artical-matome01-item-pvcount-unit view
+                %ls.artical-matome01-item-down
+                  .artical-matome01-item-thumb
+                    %a.thumb-image
+                      %img.thumb
+                  .artical-matome01-item-text
+                    %h3
+                      %a.artical-matome01-item-title-link 初心者さんでも簡単！失敗しない「トリュフ」のレシピ
+                    .artical-matome01-item-detail
+                      %p.artical-matome01-item-username
+                        %a.artical-matome01-item-username-link mikkomekkoさん
+                      %p.artical-matome01-item-pvcount
+                        %span.artical-matome01-item-pvcount-num 12891
+                        %span.artical-matome01-item-pvcount-unit view
+                %ls.artical-matome01-item-down
+                  .artical-matome01-item-thumb
+                    %a.thumb-image
+                      %img.thumb
+                  .artical-matome01-item-text
+                    %h3
+                      %a.artical-matome01-item-title-link 増え続けてる...宇宙でも「ゴミ問題」が深刻になってた
+                    .artical-matome01-item-detail
+                      %p.artical-matome01-item-username
+                        %a.artical-matome01-item-username-link musinoneさん
+                      %p.artical-matome01-item-pvcount
+                        %span.artical-matome01-item-pvcount-num 16075
+                        %span.artical-matome01-item-pvcount-unit view
+                %ls.artical-matome01-item-down
+                  .artical-matome01-item-thumb
+                    %a.thumb-image
+                      %img.thumb
+                  .artical-matome01-item-text
+                    %h3
+                      %a.artical-matome01-item-title-link 着やせ効果抜群！今年狙いたい「細見えアイテム」5選
+                    .artical-matome01-item-detail
+                      %p.artical-matome01-item-username
+                        %a.artical-matome01-item-username-link tokyocapybaraさん
+                      %p.artical-matome01-item-pvcount
+                        %span.artical-matome01-item-pvcount-num 224426
+                        %span.artical-matome01-item-pvcount-unit view
+                %ls.artical-matome01-item-down
+                  .artical-matome01-item-thumb
+                    %a.thumb-image
+                      %img.thumb
+                  .artical-matome01-item-text
+                    %h3
+                      %a.artical-matome01-item-title-link 気付かなかった。コーヒーフィルターってこんなに活用できちゃう！
+                    .artical-matome01-item-detail
+                      %p.artical-matome01-item-username
+                        %a.artical-matome01-item-username-link pinkswan999さん
+                      %p.artical-matome01-item-pvcount
+                        %span.artical-matome01-item-pvcount-num 271825
+                        %span.artical-matome01-item-pvcount-unit view
+          .article-matome02
+            %ul.article-matome02-list
+              %li.article-matome02-item
+                %a.article-matome02-link
+                  %h4 南極大陸に上陸にチャレンジ…最近のドラえもん&のび太が…
+                  %p 「映画ドラえもん」シリーズ第37作目の本作は南極が舞台となることから、ドラえもんとのび太が南極上陸にチャレンジした。ニュースをまとめ。
+                .artical-matome02-item-detail
+                  %p.artical-matome02-item-username
+                    %a.artical-matome02-item-username-link isaaccさん
+                  %p.artical-matome01-item-pvcount
+                    %span.artical-matome01-item-pvcount-num 27270
+                    %span.artical-matome01-item-pvcount-unit view
+              %li.article-matome02-item-down
+                %a.article-matome02-link
+                  %h4 残業０でも残業代が!? 日本の労働や残業が変わってきている！
+                  %p 近年、残業ゼロでも残業代を払う企業が誕生するなど、日本における残業に対する考え方が変わってきているようです。残業制度の改革は、生産性が低いと言われる日本の労働力の改善にも繋がるとみられ注目が集まっています。
+                .artical-matome02-item-detail
+                  %p.artical-matome02-item-username
+                    %a.artical-matome02-item-username-link ニュースの鏡さん
+                  %p.artical-matome01-item-pvcount
+                    %span.artical-matome01-item-pvcount-num 25372
+                    %span.artical-matome01-item-pvcount-unit view
+              %li.article-matome02-item-down
+                %a.article-matome02-link
+                  %h4 酉年だから観ておきたい！今年公開の『鳥』が関係する映画…
+                  %p いろんな所に鳥が関係する映画を集めてみました新宿スワンⅡ、ポケットモンスターキミにきめた！、スパイダーマンホームカミング、トリガール、追捕 MANHUNT
+                .artical-matome02-item-detail
+                  %p.artical-matome02-item-username
+                    %a.artical-matome02-item-username-link canty0628さん
+                  %p.artical-matome01-item-pvcount
+                    %span.artical-matome01-item-pvcount-num 22869
+                    %span.artical-matome01-item-pvcount-unit view
+              %li.article-matome02-item-down
+                %a.article-matome02-link
+                  %h4 ネット通販で買える！スペシャルティコーヒーを扱うコーヒ…
+                  %p 香り・味・見た目が格別なスペシャルティコーヒー。一度は飲んでみたい人も多いのではないでしょうか。今回はネット通販でもスペシャルティコーヒーを扱っている、おすすめコーヒー店を4店選んだのでご紹介します。
+                .artical-matome02-item-detail
+                  %p.artical-matome02-item-username
+                    %a.artical-matome02-item-username-link SpecialtyCoffeeさん
+                  %p.artical-matome01-item-pvcount
+                    %span.artical-matome01-item-pvcount-num 22869
+                    %span.artical-matome01-item-pvcount-unit view
+              %li.article-matome02-item-down
+                %a.article-matome02-link
+                  %h4 これは期待・・・「ハイテク教育」で将来、学校通う必要が…
+                  %p 最近ではタブレットなどを使ったICT教育を見かけますが、それよりもさらに未来感のある教育方法があるみたいです。
+                .artical-matome02-item-detail
+                  %p.artical-matome02-item-username
+                    %a.artical-matome02-item-username-link tonkatudjさん
+                  %p.artical-matome01-item-pvcount
+                    %span.artical-matome01-item-pvcount-num 14190
+                    %span.artical-matome01-item-pvcount-unit view
+        .main-footer
+          .pagenation 1 2 3 4 5 6 7
+      .sub-lists
+        .freead
+        .freespace
+        .topic-area
+          .topic-lists
+            .topic-heading
+              %h5 おすすめトピック
+              %a.topic-link トピック一覧
+            .topic-word-lists
+              %ul.topic-word-lists-ul
+                %li.topic-word-list
+                  %a.topic-word 寒さ対策 (10)
+                %li.topic-word-list
+                  %a.topic-word バレンタイン (220)
+                %li.topic-word-list
+                  %a.topic-word 雪見だいふく (55)
+                %li.topic-word-list
+                  %a.topic-word チョコレートレシピ (234)
+                %li.topic-word-list
+                  %a.topic-word 立ち飲み (10)
+                %li.topic-word-list
+                  %a.topic-word 都市伝説 (10)
+                %li.topic-word-list
+                  %a.topic-word 驚愕 (120)
+        .sub-separator
+        .pr-matome
+          .pr-matome-all
+            .pr-matome-list-title
+              %h5 PRまとめ
+            %ul.pr-matome-lists
+              %li.pr-matome-item
+                .pr-matome-list-thumb
+                  %a.pr-thumb-image
+                    %image.pr-thumb
+                .pr-matome-list-text
+                  %h6.pr-matome-list-link
+                    %a.pr-matome-list-link-text なんだコレ。。薬局がめっちゃアピってる謎の化粧水
+                  %p.pr-matome-list-username
+                    %a.pr-matome-list-username-link
+                    まとめ編集部さん
+              %li.pr-matome-item
+                .pr-matome-list-thumb
+                  %a.pr-thumb-image
+                    %image.pr-thumb
+                .pr-matome-list-text
+                  %h6.pr-matome-list-link
+                    %a.pr-matome-list-link-text 保湿じゃダメ！？カサカサ肌には意外な原因があった…
+                  %p.pr-matome-list-username
+                    %a.pr-matome-list-username-link
+                    まとめ編集部さん
+              %li.pr-matome-item
+                .pr-matome-list-thumb
+                  %a.pr-thumb-image
+                    %image.pr-thumb
+                .pr-matome-list-text
+                  %h6.pr-matome-list-link
+                    %a.pr-matome-list-link-text ばあちゃんも使ってた「昭和のコスメ」がいまだに人気…！
+                  %p.pr-matome-list-username
+                    %a.pr-matome-list-username-link
+                    まとめ編集部さん
+              %li.pr-matome-item
+                .pr-matome-list-thumb
+                  %a.pr-thumb-image
+                    %image.pr-thumb
+                .pr-matome-list-text
+                  %h6.pr-matome-list-link
+                    %a.pr-matome-list-link-text 女性には、「ほうれい線」より気にすべきものがある…
+                  %p.pr-matome-list-username
+                    %a.pr-matome-list-username-link
+                    まとめ編集部さん
+              %li.pr-matome-item
+                .pr-matome-list-thumb
+                  %a.pr-thumb-image
+                    %image.pr-thumb
+                .pr-matome-list-text
+                  %h6.pr-matome-list-link
+                    %a.pr-matome-list-link-text 色素薄い系になろう♡「透明感」が出る、簡単スキンケア
+                  %p.pr-matome-list-username
+                    %a.pr-matome-list-username-link
+                    まとめ編集部さん
+        .sub-separator
+        .sub-banner
+          %ul.sub-banner-bottom
+            %li
+              %a.sub-banner-bottom-link
+                %img.sub-banner-bottom-image 話題の動画をまとめよう
+  .matome-footer
+    .matome-footer-wrap
+      .footer-inner
+        .corporate-links
+          %ul.corporate-links-ul
+            %ls.corporate-link
+              %a.corporate 会社概要
+              %span.saparator
+            %ls.corporate-link
+              %a.corporate 利用規約
+              %span.saparator
+            %ls.corporate-link
+              %a.corporate プライバシー
+              %span.saparator
+            %ls.corporate-link
+              %a.corporate ヘルプ
+              %span.saparator
+            %ls.corporate-link
+              %a.corporate NAVERまとめ公式ブログ
+              %span.saparator
+          %p.copyright
+            %b ©LINE Corporation
