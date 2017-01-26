@@ -57,4 +57,4 @@ end
 gem 'haml-rails'
 gem 'erb2haml'
 gem 'dotenv-rails'
-
+gem 'font-awesome-rails'
